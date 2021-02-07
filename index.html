@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet"  href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    <h2>Users</h2>
+
+    <input type="text" id="name_search" placeholder="Search by name.."/>
+    <input id="balance" placeholder="Search by balance.."/>
+    <select id="is_active" class="filter" >
+        <option value="0" hidden>Choose status</option>
+        <option value="true">Active</option>
+        <option value="false">Non Active</option>
+   </select> 
+   <select id="registered" class = "filter">
+        <option value="0" hidden>Choose year</option>
+        <option value="2014">Registered in 2014 </option>
+        <option value="2015">Registered in 2015 </option>
+        <option value="2016">Registered in 2016 </option>
+        <option value="2017">Registered in 2017 </option>
+        <option value="2018">Registered in 2018 </option>
+        <option value="2019">Registered in 2019 </option>
+        <option value="2020">Registered in 2020 </option>
+    </select>  
+    <input type="text" id="state_search" placeholder="Search by state.."/>
+    <input type="text" id="country_search" placeholder="Search by country.."/>
+
+
+    <table>
+        <thead>
+            <th id = "fullName"> Sort by name</th>
+            <th id = "balance"> Sort by balance</th>
+            <th id = "activity"> Sort by active</th>
+            <th id = "registerDate"> Sort by registered</th>
+            <th id = "state"> Sort by state</th>
+            <th id = "country"> Sort by country</th>
+        </thead>
+
+        <tbody id='items-container'>
+
+        </tbody>
+    </table>
+</body>
